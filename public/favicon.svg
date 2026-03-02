@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background -->
+  <rect width="64" height="64" rx="14" fill="#0f172a"/>
+  <!-- Table A (top-left) -->
+  <rect x="6" y="8" width="22" height="20" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="6" y="8" width="22" height="7" rx="3" fill="#38bdf8"/>
+  <rect x="6" y="13" width="22" height="2" fill="#38bdf8"/>
+  <line x1="10" y1="20" x2="24" y2="20" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+  <line x1="10" y1="24" x2="20" y2="24" stroke="#38bdf8" stroke-width="1" opacity="0.4"/>
+  <!-- Table B (top-right) -->
+  <rect x="36" y="8" width="22" height="20" rx="3" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="36" y="8" width="22" height="7" rx="3" fill="#34d399"/>
+  <rect x="36" y="13" width="22" height="2" fill="#34d399"/>
+  <line x1="40" y1="20" x2="54" y2="20" stroke="#34d399" stroke-width="1" opacity="0.4"/>
+  <line x1="40" y1="24" x2="50" y2="24" stroke="#34d399" stroke-width="1" opacity="0.4"/>
+  <!-- Table C (bottom-center) -->
+  <rect x="21" y="38" width="22" height="20" rx="3" fill="#1e293b" stroke="#e879f9" stroke-width="1.5"/>
+  <rect x="21" y="38" width="22" height="7" rx="3" fill="#e879f9"/>
+  <rect x="21" y="43" width="22" height="2" fill="#e879f9"/>
+  <line x1="25" y1="50" x2="39" y2="50" stroke="#e879f9" stroke-width="1" opacity="0.4"/>
+  <line x1="25" y1="54" x2="35" y2="54" stroke="#e879f9" stroke-width="1" opacity="0.4"/>
+  <!-- Arrow A→C -->
+  <path d="M17 28 Q17 33 32 38" stroke="#38bdf8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <polygon points="32,38 28,34 35,34" fill="#38bdf8"/>
+  <!-- Arrow B→C -->
+  <path d="M47 28 Q47 33 43 38" stroke="#34d399" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <polygon points="43,38 40,34 46,35" fill="#34d399"/>
+</svg>
