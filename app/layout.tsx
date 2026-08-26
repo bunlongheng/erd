@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import SwRegister from "./sw-register";
 
 export const viewport: Viewport = {
     width: "device-width",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     title: "ERD++",
     description: "Entity Relationship Diagram generator — paste SQL CREATE TABLE statements and get a polished ERD instantly.",
     metadataBase: new URL("https://erd-bheng.vercel.app"),
+    manifest: "/manifest.webmanifest",
     icons: {
         icon: "/favicon.svg",
         shortcut: "/favicon.svg",
@@ -31,7 +33,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body suppressHydrationWarning>{children}</body>
+            <body suppressHydrationWarning>
+                {children}
+                <SwRegister />
+            </body>
         </html>
     );
 }
