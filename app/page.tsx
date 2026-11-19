@@ -525,6 +525,14 @@ export default function ErdPage() {
         return () => cancelAnimationFrame(id);
     }, [showSettings, showCode]); // eslint-disable-line react-hooks/exhaustive-deps
 
+    // Refit on resize (foldable fold/unfold, rotation) while the view is in Fit mode
+    useEffect(() => {
+        if (!fitActive) return;
+        const onResize = () => fitZoom();
+        window.addEventListener("resize", onResize);
+        return () => window.removeEventListener("resize", onResize);
+    }, [fitActive, fitZoom]);
+
     const upd = (p: Partial<Opts>) => setOpts(o => ({ ...o, ...p }));
     const updL = (p: Partial<Layout>) => setLayout(l => ({ ...l, ...p }));
 
